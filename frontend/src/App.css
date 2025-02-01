@@ -180,3 +180,29 @@ p {
     transform: translateY(0);
   }
 }
+
+.language-selector {
+  margin-bottom: 20px;
+}
+
+.language-selector label {
+  font-size: 1rem;
+  margin-right: 10px;
+  color: var(--text-color);
+}
+
+.language-selector select {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 2px solid var(--textarea-border);
+  border-radius: 10px;
+  background: var(--textarea-bg);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.language-selector select:focus {
+  border-color: #007bff;
+  outline: none;
+}
