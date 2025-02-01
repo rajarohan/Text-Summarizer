@@ -7,9 +7,8 @@ function App() {
   const [summary, setSummary] = useState("");
   const [loading, setLoading] = useState(false);
   const [theme, setTheme] = useState("light");
-  const [language, setLanguage] = useState("en"); // Default to English
+  const [language, setLanguage] = useState("en");
 
-  // List of 22 Indian languages with their language codes
   const indianLanguages = [
     { code: "en", name: "English" },
     { code: "hi", name: "Hindi" },
@@ -39,7 +38,6 @@ function App() {
     if (!text.trim()) return alert("Please enter text!");
     setLoading(true);
     try {
-      // Send text and selected language to the backend
       const response = await axios.post("http://127.0.0.1:5000/summarize", {
         text,
         language,
