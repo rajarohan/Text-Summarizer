@@ -38,9 +38,8 @@ function App() {
     if (!text.trim()) return alert("Please enter text!");
     setLoading(true);
     try {
-      const response = await axios.post("http://127.0.0.1:5000/summarize", {
-        text,
-        language,
+      const response = await axios.post("https://text-summariser-backend.onrender.com", {
+       text, language 
       });
       setSummary(response.data.summary);
     } catch (error) {
