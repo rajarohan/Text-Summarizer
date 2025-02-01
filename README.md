@@ -16,7 +16,10 @@ A **Text Summarizer** that extracts the most important information from a given 
 ## 🛠️ Technologies Used  
 - Python  
 - Natural Language Processing (NLP)  
-- NLTK / SpaCy / Hugging Face Transformers (based on implementation)  
+- transformers
+- React (for Frontend)
+- Flask (for Backend)
+- googletrans (for translation)
 
 ## 📌 Installation  
 
